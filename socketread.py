@@ -7,16 +7,17 @@ def socketread():
     notdone = True
     intheader = False
     floatheader = False
-    while ( notdone  ) :
-      
-    	#receive the first line
+
+    while notdone:
+
+        #receive the first line
         line = s.recv(256)
-        
-        if(not line):
-            notdone=False
+
+        if not line:
+             notdone = False
         else:
             print line
-            
+    
     s.close()
     
 if(__name__=="__main__"):
