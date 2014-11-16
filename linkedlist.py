@@ -12,9 +12,9 @@ def print_list(head=None):
     if(head.next):
         print_list(head.next)
 
-def print_list_reverse(head=None):
+def print_list_reverse(head):
     """Prints linked list backwards """
-    if(head==None):
+    if not head:
         return
 
     top = head
@@ -59,3 +59,5 @@ if(__name__=="__main__"):
 
     delete_node(head_node, node4)
     print_list(head_node)
+    print 'Printing list in reverse'
+    print_list_reverse(head_node)
