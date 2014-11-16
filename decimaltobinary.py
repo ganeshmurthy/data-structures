@@ -1,6 +1,6 @@
 def decimal_to_binary(decimal_number):
     """
-    Converts decimal numbers to binary representation 
+    Converts decimal numbers to binary representation. Uses recursion. 
     """
     if decimal_number < 0:
         return 'No decimal representation for negative numbers'
