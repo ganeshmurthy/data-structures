@@ -6,6 +6,9 @@ TEST_IIN = '514728'
 decimal_decoder = lambda s: int(s, 10)
 decimal_encoder = lambda i: str(i)
 
+def verify(string, base=10, decoder=decimal_decoder):
+    return luhn_sum_mod_base(string, base=base, decoder=decoder) == 0
+
 def luhn_sum_mod_base(string, base=10, decoder=decimal_decoder):
     # Adapted from http://en.wikipedia.org/wiki/Luhn_algorithm
     digits = map(decoder, string)
