@@ -1,4 +1,4 @@
-python-basics
+data structures and algorithms
 =============
 
-Python programs that exhibit its simplicity
+Implementing algorithms from CLRS using Java and Python
